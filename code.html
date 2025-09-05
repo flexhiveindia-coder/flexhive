@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flex Hive - Freelance Services Provider</title>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Subtle fade-in animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s forwards;
+    }
+    .fade-in.delay-1 {
+      animation-delay: 0.2s;
+    }
+    .fade-in.delay-2 {
+      animation-delay: 0.4s;
+    }
+    .fade-in.delay-3 {
+      animation-delay: 0.6s;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    /* Smooth scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+  <!-- Navigation -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#hero" class="text-2xl font-bold text-indigo-600 hover:text-indigo-700"
+        >Flex Hive</a
+      >
+      <nav class="hidden md:flex space-x-8 text-gray-700">
+        <a href="#hero" class="hover:text-indigo-600 transition">Home</a>
+        <a href="#about" class="hover:text-indigo-600 transition">About</a>
+        <a href="#services" class="hover:text-indigo-600 transition">Services</a>
+        <a href="#portfolio" class="hover:text-indigo-600 transition">Portfolio</a>
+        <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+      </nav>
+      <button
+        id="menu-btn"
+        class="md:hidden text-gray-700 focus:outline-none"
+        aria-label="Toggle menu"
+      >
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+    <nav
+      id="mobile-menu"
+      class="hidden md:hidden bg-white border-t border-gray-200"
+    >
+      <div class="px-6 py-4 flex flex-col space-y-4">
+        <a href="#hero" class="hover:text-indigo-600 transition">Home</a>
+        <a href="#about" class="hover:text-indigo-600 transition">About</a>
+        <a href="#services" class="hover:text-indigo-600 transition">Services</a>
+        <a href="#portfolio" class="hover:text-indigo-600 transition">Portfolio</a>
+        <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section
+    id="hero"
+    class="bg-white py-20 flex flex-col items-center text-center px-6 sm:px-12 md:px-24"
+  >
+    <h1 class="text-4xl sm:text-5xl font-extrabold max-w-3xl mb-6 fade-in">
+      Flex Hive — Your Trusted Freelance Services Partner
+    </h1>
+    <p class="text-lg max-w-xl text-gray-600 mb-8 fade-in delay-1">
+      We provide expert freelancing solutions including Shopify store management,
+      dropshipping, logo & website design, business registration, and social media
+      marketing to help your business thrive.
+    </p>
+    <a
+      href="#services"
+      class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-md font-semibold shadow hover:bg-indigo-700 transition fade-in delay-2"
+      >Explore Our Services</a
+    >
+  </section>
+
+  <!-- About Section -->
+  <section
+    id="about"
+    class="max-w-7xl mx-auto px-6 sm:px-12 md:px-24 py-20 grid md:grid-cols-2 gap-12 items-center"
+  >
+    <div class="fade-in">
+      <h2 class="text-3xl font-bold mb-4 text-indigo-600">About Flex Hive</h2>
+      <p class="text-gray-700 mb-6">
+        Flex Hive is a professional freelancing services provider dedicated to
+        delivering high-quality solutions tailored to your business needs. Our
+        team of vetted experts ensures timely delivery and transparent communication.
+      </p>
+      <ul class="list-disc list-inside space-y-2 text-gray-600">
+        <li>Shopify & Dropshipping Store Management</li>
+        <li>Logo, Banner & Website Design</li>
+        <li>Complete Business Registration</li>
+        <li>Offline to Online Business Transformation</li>
+        <li>Social Media Marketing & Management</li>
+        <li>Business Analysis & Strategy</li>
+      </ul>
+    </div>
+    <div class="fade-in delay-1">
+      <img
+        src="logo.png"
+        alt="Professional team collaborating in a modern office environment"
+        class="rounded-lg shadow-lg"
+        loading="lazy"
+      />
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section
+    id="services"
+    class="bg-white py-20 px-6 sm:px-12 md:px-24 max-w-7xl mx-auto"
+  >
+    <h2 class="text-3xl font-bold text-center text-indigo-600 mb-12 fade-in">
+      Our Services
+    </h2>
+    <div
+      class="grid gap-10 sm:grid-cols-2 md:grid-cols-3 max-w-5xl mx-auto"
+    >
+      <article
+        class="bg-indigo-50 rounded-lg p-6 shadow hover:shadow-lg transition cursor-default fade-in delay-1"
+      >
+        <i class="fas fa-store text-indigo-600 text-4xl mb-4"></i>
+        <h3 class="font-semibold text-lg mb-2">Shopify Store Management</h3>
+        <p class="text-gray-600 text-sm">
+          Complete setup and management of your Shopify store to maximize sales
+          and customer satisfaction.
+        </p>
+      </article>
+      <article
+        class="bg-indigo-50 rounded-lg p-6 shadow hover:shadow-lg transition cursor-default fade-in delay-2"
+      >
+        <i class="fas fa-truck text-indigo-600 text-4xl mb-4"></i>
+        <h3 class="font-semibold text-lg mb-2">Dropshipping Management</h3>
+        <p class="text-gray-600 text-sm">
+          Efficient dropshipping solutions to streamline your supply chain and
+          boost profits.
+        </p>
+      </article>
+      <article
+        class="bg-indigo-50 rounded-lg p-6 shadow hover:shadow-lg transition cursor-default fade-in delay-3"
+      >
+        <i class="fas fa-pencil-ruler text-indigo-600 text-4xl mb-4"></i>
+        <h3 class="font-semibold text-lg mb-2">Logo & Banner Designing</h3>
+        <p class="text-gray-600 text-sm">
+          Creative and professional logo and banner designs that elevate your
+          brand identity.
+        </p>
+      </article>
+      <article
+        class="bg-indigo-50 rounded-lg p-6 shadow hover:shadow-lg transition cursor-default fade-in delay-1"
+      >
+        <i class="fas fa-laptop-code text-indigo-600 text-4xl mb-4"></i>
+        <h3 class="font-semibold text-lg mb-2">Website Designing</h3>
+        <p class="text-gray-600 text-sm">
+          Modern, responsive websites designed to engage visitors and convert
+          leads.
+        </p>
+      </article>
+      <article
+        class="bg-indigo-50 rounded-lg p-6 shadow hover:shadow-lg transition cursor-default fade-in delay-2"
+      >
+        <i class="fas fa-file-signature text-indigo-600 text-4xl mb-4"></i>
+        <h3 class="font-semibold text-lg mb-2">Business Registration</h3>
+        <p class="text-gray-600 text-sm">
+          Hassle-free business registration services to get your company legally
+          compliant.
+        </p>
+      </article>
+      <article
+        class="bg-indigo-50 rounded-lg p-6 shadow hover:shadow-lg transition cursor-default fade-in delay-3"
+      >
+        <i class="fas fa-exchange-alt text-indigo-600 text-4xl mb-4"></i>
+        <h3 class="font-semibold text-lg mb-2">Offline to Online Transformation</h3>
+        <p class="text-gray-600 text-sm">
+          Transition your traditional business to a thriving online presence
+          with expert guidance.
+        </p>
+      </article>
+      <article
+        class="bg-indigo-50 rounded-lg p-6 shadow hover:shadow-lg transition cursor-default fade-in delay-1"
+      >
+        <i class="fas fa-bullhorn text-indigo-600 text-4xl mb-4"></i>
+        <h3 class="font-semibold text-lg mb-2">Social Media Marketing & Management</h3>
+        <p class="text-gray-600 text-sm">
+          Grow your brand and engage your audience with strategic social media
+          campaigns.
+        </p>
+      </article>
+      <article
+        class="bg-indigo-50 rounded-lg p-6 shadow hover:shadow-lg transition cursor-default fade-in delay-2"
+      >
+        <i class="fas fa-chart-line text-indigo-600 text-4xl mb-4"></i>
+        <h3 class="font-semibold text-lg mb-2">Business Analysis</h3>
+        <p class="text-gray-600 text-sm">
+          Data-driven insights to optimize your business operations and strategy.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section
+    id="portfolio"
+    class="max-w-7xl mx-auto px-6 sm:px-12 md:px-24 py-20"
+  >
+    <h2 class="text-3xl font-bold text-center text-indigo-600 mb-12 fade-in">
+      Portfolio Highlights
+    </h2>
+    <div
+      class="grid gap-8 sm:grid-cols-2 md:grid-cols-3"
+    >
+      <div class="rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer fade-in delay-1">
+        <img
+          src="shopify.png"
+          alt="Screenshot of a professionally managed Shopify e-commerce store"
+          class="w-full object-cover"
+          loading="lazy"
+        />
+        <div class="p-4 bg-white">
+          <h3 class="font-semibold text-lg text-gray-800">Shopify Store</h3>
+          <p class="text-gray-600 text-sm mt-1">
+            Custom Shopify store setup and management.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer fade-in delay-2">
+        <img
+          src="logo1.png"
+          alt="Creative logo design sample"
+          class="w-full object-cover"
+          loading="lazy"
+        />
+        <div class="p-4 bg-white">
+          <h3 class="font-semibold text-lg text-gray-800">Logo Design</h3>
+          <p class="text-gray-600 text-sm mt-1">
+            Unique logos tailored to your brand.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer fade-in delay-3">
+        <img
+          src="website.png"
+          alt="Modern responsive website design"
+          class="w-full object-cover"
+          loading="lazy"
+        />
+        <div class="p-4 bg-white">
+          <h3 class="font-semibold text-lg text-gray-800">Website Design</h3>
+          <p class="text-gray-600 text-sm mt-1">
+            Responsive and engaging websites.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer fade-in delay-1">
+        <img
+          src="registration.png"
+          alt="Business registration certificate sample"
+          class="w-full object-cover"
+          loading="lazy"
+        />
+        <div class="p-4 bg-white">
+          <h3 class="font-semibold text-lg text-gray-800">Business Registration</h3>
+          <p class="text-gray-600 text-sm mt-1">
+            Legal business setup services.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer fade-in delay-2">
+        <img
+          src="smm.png"
+          alt="Social media marketing campaign example"
+          class="w-full object-cover"
+          loading="lazy"
+        />
+        <div class="p-4 bg-white">
+          <h3 class="font-semibold text-lg text-gray-800">Social Media Marketing</h3>
+          <p class="text-gray-600 text-sm mt-1">
+            Engaging campaigns to grow your audience.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer fade-in delay-3">
+        <img
+          src="business.png"
+          alt="Business analysis dashboard"
+          class="w-full object-cover"
+          loading="lazy"
+        />
+        <div class="p-4 bg-white">
+          <h3 class="font-semibold text-lg text-gray-800">Business Analysis</h3>
+          <p class="text-gray-600 text-sm mt-1">
+            Data-driven insights for growth.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section
+    id="contact"
+    class="bg-indigo-600 text-white py-20 px-6 sm:px-12 md:px-24"
+  >
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+      <p class="mb-10 text-indigo-200">
+        Ready to take your business to the next level? Contact us today!
+      </p>
+      <form
+        id="contact-form"
+        class="bg-indigo-700 rounded-lg p-8 shadow-lg space-y-6"
+        novalidate
+      >
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+          class="w-full p-3 rounded bg-indigo-600 placeholder-indigo-300 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+          class="w-full p-3 rounded bg-indigo-600 placeholder-indigo-300 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+        />
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+          class="w-full p-3 rounded bg-indigo-600 placeholder-indigo-300 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+        ></textarea>
+        <button
+          type="submit"
+          class="w-full bg-yellow-400 text-indigo-900 font-semibold py-3 rounded hover:bg-yellow-300 transition"
+        >
+          Send Message
+        </button>
+        <p id="form-feedback" class="text-green-300 mt-2 hidden"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200 py-8">
+    <div
+      class="max-w-7xl mx-auto px-6 sm:px-12 md:px-24 flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm"
+    >
+      <p>© 2023 Flex Hive. All rights reserved.</p>
+      <div class="flex space-x-6 mt-4 md:mt-0">
+        <a
+          href="#"
+          aria-label="Facebook"
+          class="hover:text-indigo-600 transition"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a
+          href="#"
+          aria-label="Twitter"
+          class="hover:text-indigo-600 transition"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          href="#"
+          aria-label="LinkedIn"
+          class="hover:text-indigo-600 transition"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Contact form submission simulation
+    const form = document.getElementById("contact-form");
+    const feedback = document.getElementById("form-feedback");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      feedback.textContent = "Thank you for reaching out! We'll get back to you soon.";
+      feedback.classList.remove("hidden");
+      form.reset();
+    });
+  </script>
+</body>
+</html>
